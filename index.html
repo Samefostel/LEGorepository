@@ -10,9 +10,9 @@
     />
     <style>
         body {
-            background: linear-gradient(#141e30, #2a6c56);
-            color: white;
             font-family: sans-serif;
+            background: linear-gradient(#141e30, #2a6c56);
+            color: #03f484;
             margin: 0;
             padding: 0;
         }
@@ -27,6 +27,21 @@
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
             border-radius: 10px;
             margin: 20px;
+            position: relative;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #03f484;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
         section {
@@ -42,31 +57,87 @@
             border-radius: 10px;
             margin: 20px;
         }
+
+        h1, h2 {
+            color: #03f484;
+        }
+
+        .animate__animated {
+            animation-duration: 2s;
+        }
+
+        .animate__bounceInDown {
+            animation-delay: 0.5s;
+        }
+
+        .info-text {
+            color: #ff6347;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .gallery-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery-images img {
+            margin: 10px;
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="animate__animated animate__bounceInDown">Добро пожаловать в LEGOLAND В Данії</h1>
+        <nav>
+            <a href="#products">Продукти</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#videos">Відео огляди</a>
+            <a href="#contact">Контакт</a>
+            <a href="#info">Інформація</a>
+        </nav>
+        <h1 class="animate__animated animate__bounceInDown">Ласкаво просимо в LEGOLAND В Данії</h1>
     </header>
     
     <section id="products">
-        <h2>Продукты</h2>
-        <p><a href="https://www.lego.com/uk-ua/themes"><img src="https://www.saturdaykids.com/wp-content/uploads/2020/05/lego-logo-transparent-png-stickpng-211281.png" width="65px ></a></p>
+        <h2 class="animate__animated animate__fadeInLeft">Продукти</h2>
+        <p><a href="https://www.lego.com/uk-ua/themes"><img src="https://www.saturdaykids.com/wp-content/uploads/2020/05/lego-logo-transparent-png-stickpng-211281.png" width="65px"></a></p>
     </section>
     
     <section id="gallery">
-        <h2>Галерея изображений</h2>
-        <p><img src="https://avialiga.ua/wp-content/uploads/2021/03/img_20200731_095837-scaled-1-e1618841396474.jpg" width="600px"> </p>
+        <h2 class="animate__animated animate__fadeInRight">Галерея зображень</h2>
+        <div class="gallery-images">
+            <img src="https://avialiga.ua/wp-content/uploads/2021/03/img_20200731_095837-scaled-1-e1618841396474.jpg" width="400px">
+            <img src="https://www.besix.com/-/media/images/projects/legoland-dubai/the-dragon-1.jpg?mh=400&h=400&w=601&la=en&hash=8D9D28625C2F541CDC4358F212C17435" width="400px">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/308779273.jpg?k=f9232d7d771e42fb4e52baaa84c68396a68f411362d9dc97155bcd93d02a48c3&o=&hp=1" width="400px">
+            <img src="https://www.cityguide-dubai.com/fileadmin/_processed_/a/f/csm_legoland-dubai-slider_bd51b3289a.jpg" width="400px">
+        </div>
     </section>
     
     <section id="videos">
-        <h2>Видео обзоры</h2>
-        <p><a href="https://www.youtube.com/watch?v=YSYh2W-MxEM"> <img src="https://cdn.icon-icons.com/icons2/509/PNG/512/YouTube_icon-icons.com_49934.png"  width="65px"></a></p>
+        <h2 class="animate__animated animate__fadeInLeft">Відео огляди</h2>
+        <p>
+            <a href="https://www.youtube.com/watch?v=YSYh2W-MxEM">
+                <img src="https://cdn.icon-icons.com/icons2/509/PNG/512/YouTube_icon-icons.com_49934.png" width="65px">
+            </a>
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=B1m9RAN4MUo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" width="65px">
+            </a>
+        </p>
     </section>
     
     <section id="contact">
-        <h2>Связаться с нами</h2>
-        <p><img src="https://e7.pngegg.com/pngimages/508/998/png-clipart-telegram-computer-icons-logo-android-angle-triangle-thumbnail.png" height="40"> @fostel969</p>
+        <h2 class="animate__animated animate__fadeInRight">Зв'язатися з нами</h2>
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" height="40"> @fostel969</p>
+    </section>
+
+    <section id="info">
+        <h2 class="animate__animated animate__fadeInLeft">Інформація</h2>
+        <p class="info-text">LEGOLAND В Данії - це фантастичне місце для дітей і дорослих, де ви можете насолоджуватися різноманітними атракціонами, шоу і подіями, створеними з більш ніж 20 мільйонів LEGO цеглинок. Тут можна побачити мініатюрні моделі знаменитих будівель і навіть відчути дух пригод з Peppa Pig і LEGO Friends. Кожен знайде тут щось для себе!</p>
     </section>
     
     <footer>
